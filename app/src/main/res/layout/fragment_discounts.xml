@@ -6,10 +6,13 @@
     tools:context=".Discounts">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/discountListViewId"
+        android:divider="#b75353"
+        android:dividerHeight="2dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="50dp"
-        android:text="Discounts" />
+        android:layout_height="match_parent">
+
+    </ListView>
 
 </FrameLayout>

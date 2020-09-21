@@ -9,16 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OrderDetails"></activity>
-        <activity android:name=".AddProduct" >
-
-        </activity>
-        <activity android:name=".DeliveryManDetails">
-        </activity>
+        <activity android:name=".orderOptionPage"></activity>
+        <activity android:name=".AddProduct"></activity>
+        <activity android:name=".DeliveryManDetails"></activity>
         <activity android:name=".tailor_info" />
         <activity android:name=".SignUp" />
-        <activity android:name=".SignIn"></activity>
-        <activity android:name=".Splash_Screen" >
+        <activity android:name=".SignIn" />
+        <activity android:name=".Splash_Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

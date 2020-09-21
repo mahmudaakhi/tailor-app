@@ -18,13 +18,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.google.android.material.tabs.TabLayout android:layout_height="wrap_content" android:layout_width="match_parent" app:tabIndicatorColor="@android:color/white" android:layout_marginTop="10dp" app:tabIndicatorHeight="0dp" android:id="@+id/tablayout" app:tabMode="fixed" app:tabGravity="fill"  >
+        <com.google.android.material.tabs.TabLayout android:layout_height="wrap_content" android:layout_width="match_parent" app:tabIndicatorColor="@color/colorPrimary" android:layout_marginTop="10dp" app:tabIndicatorHeight="2dp" android:id="@+id/tablayout" app:tabMode="fixed" app:tabGravity="fill"  >
 
             <com.google.android.material.tabs.TabItem android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/bestrateTabItem"         android:fontFamily="@font/alconica"
                 android:text="Best Rated"
                 />
-
-
             <com.google.android.material.tabs.TabItem android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/favTabItem"         android:fontFamily="@font/alconica"
                 android:text="Favourite"  />
 

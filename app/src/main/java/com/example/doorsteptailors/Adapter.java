@@ -59,7 +59,7 @@ public class ViewHolder extends RecyclerView.ViewHolder{
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),OrderDetails.class);
+                Intent i = new Intent(v.getContext(),orderOptionPage.class);
                 i.putExtra("title",data.get(getAdapterPosition()));
                 v.getContext().startActivity(i);
             }

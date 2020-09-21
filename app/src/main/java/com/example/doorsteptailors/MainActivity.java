@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 //      // enabling action bar app icon and behaving it as toggle button
-         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeButtonEnabled(true);
+//         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+         //   getSupportActionBar().setHomeButtonEnabled(true);
         //for tab bar
         tablayout = findViewById(R.id.tabLayoutId);
 

@@ -45,7 +45,7 @@ public class AddProduct extends AppCompatActivity {
                 ProductClass productClass = new ProductClass(name, price, discount, catagory, "false");
                 firebaseAuth = FirebaseAuth.getInstance();
                 databaseReference = FirebaseDatabase.getInstance().getReference().child("Students");
-                Intent intent=new Intent(AddProduct.this,OrderDetails.class);
+                Intent intent=new Intent(AddProduct.this,orderOptionPage.class);
                 startActivity(intent);
 
             }

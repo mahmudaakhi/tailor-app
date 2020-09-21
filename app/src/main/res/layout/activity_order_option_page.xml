@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".orderOptionPage">
+
+    <com.google.android.material.tabs.TabLayout android:layout_height="wrap_content" android:layout_width="match_parent" app:tabIndicatorColor="@color/colorPrimary" android:layout_marginTop="10dp" app:tabIndicatorHeight="2dp" android:id="@+id/tablayout1" app:tabMode="fixed" app:tabGravity="fill"  >
+
+        <com.google.android.material.tabs.TabItem android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/maleTabItem"         android:fontFamily="@font/alconica"
+            android:text="@string/male"
+            />
+
+
+        <com.google.android.material.tabs.TabItem android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/femaleTabItem"         android:fontFamily="@font/alconica"
+            android:text="@string/female"  />
+
+        <com.google.android.material.tabs.TabItem android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/kidsTabItem"         android:fontFamily="@font/alconica"
+            android:text="@string/kids"  />
+    </com.google.android.material.tabs.TabLayout>
+    <Button
+        android:id="@+id/listen"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="100dp"
+        android:background="@color/colorAccent"
+        android:text="View Cart" />
+    <Button
+        android:id="@+id/call"
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@id/listen"
+        android:textColor="#fff"
+        android:layout_weight="1"
+        android:text="Back" />
+    </RelativeLayout>

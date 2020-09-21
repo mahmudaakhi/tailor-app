@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SignIn extends AppCompatActivity  {
     private EditText mEmail,mPassword;
     private RadioGroup radioGroup;
-    private RadioButton radioButton;
+    private RadioButton tailor,customer;
     private TextView textView;
     private Button button;
     ProgressBar progressBar;
@@ -42,14 +42,12 @@ public class SignIn extends AppCompatActivity  {
         button=findViewById(R.id.loginBtn);
 
 
-    button.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             String email =mEmail.getText().toString().trim();
             String password = mPassword.getText().toString().trim();
-            int getid = radioGroup.getCheckedRadioButtonId();
-            radioButton = findViewById(getid);
-            String select = radioButton.getText().toString();
+           Validation();
             Intent intent =new Intent(SignIn.this,MainActivity.class);
             startActivity(intent);
 
@@ -87,7 +85,26 @@ public class SignIn extends AppCompatActivity  {
             });
 
         }
-    });
+
+            private void Validation() {
+                int getid = radioGroup.getCheckedRadioButtonId();
+                tailor = findViewById(getid);
+                String Tailor = tailor.getText().toString();
+                customer= findViewById(getid);
+                String Customer = customer.getText().toString();
+                if(getid.equals(tailor))
+                {
+                    Intent ganesh = new Intent(SignIn.this,AddProduct.class);
+                    startActivity(ganesh);
+                }
+                else if (customer.equals("click third activity"))
+                {
+                    Intent mass = new Intent(SignIn.this,MainActivity.class);
+                    startActivity(mass);
+
+                }
+            }
+        });
 
 
 

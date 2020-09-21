@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/buttonshape"
         android:ems="10"
         android:fontFamily="@font/alconica"
@@ -74,52 +74,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Email" />
-    <TextView
-        android:id="@+id/signinas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"
-        android:text="@string/signin_as"
-        android:fontFamily="@font/alconica"
 
-        android:textStyle="bold"
-        android:layout_below="@id/password"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="50dp"
-        android:textSize="20dp"/>
-    <RadioGroup
-        android:id="@+id/RadioGRPsId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_below="@id/signinas"
-        android:layout_margin="30dp">
-        <RadioButton
-            android:fontFamily="@font/alconica"
-            android:id="@+id/SelectRadioTailorId"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
-            android:text="Tailor"
-            />
-        <RadioButton
-            android:fontFamily="@font/alconica"
-            android:id="@+id/SelectRadioCustomerId"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
-            android:text="Customer"
-            android:checked="true"
-            />
-    </RadioGroup>
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/bg"
-        android:layout_below="@id/RadioGRPsId"
+        android:layout_below="@id/password"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/alconica"
         android:text="@string/login"
