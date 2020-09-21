@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddProduct">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="Add Product"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="30dp"/>
+
+
+            <EditText
+                android:id="@+id/TailorShopId1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:hint="Product Name "
+
+                android:layout_margin="20dp"/>
+
+            <EditText
+                android:id="@+id/TailorExperienceId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:hint="Product Price(Bdt)"
+
+                android:layout_margin="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="Product Type:"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/RadioGRPsId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="50dp">
+                <RadioButton
+                    android:id="@+id/SelectRadioTailorId2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:text="For Men"
+                    />
+                <RadioButton
+                    android:id="@+id/SelectRadioTailorId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:text="For Women"
+                    />
+                <RadioButton
+                    android:id="@+id/SelectRadioCustomerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:text="For Kids"
+                    android:checked="true"
+                    />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/TailorShopId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:hint="Discount Percentage "
+                android:layout_margin="20dp"/>
+
+
+            <Button
+                android:id="@+id/TailorinfoButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:textColor="#ffff"
+                android:text="Add"
+                android:layout_margin="20dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

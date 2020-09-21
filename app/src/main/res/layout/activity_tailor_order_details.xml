@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TailorOrderDetails">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Orders"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:textStyle="bold"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#990066"
+            />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="#990066"
+
+            >
+            <com.google.android.material.tabs.TabItem android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/reciveTabItem" android:text="Recived Item"
+                />
+
+
+            <com.google.android.material.tabs.TabItem android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/asceptTabItem" android:text="Accepted Item"  />
+
+        </com.google.android.material.tabs.TabLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+
+   </TextView>
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:text="Accept"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="100dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:text="Decline"
+
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/accept"
+android:layout_marginLeft="30dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="40dp"
+      >
+
+            </Button>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@id/accept"
+    android:layout_marginTop="30dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accepted Items"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColorHighlight="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"></TextView>
+</androidx.cardview.widget.CardView>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/cardview"
+       android:gravity="center"
+       android:layout_marginTop="10dp">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mark As Done"
+    android:textColor="@android:color/white"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    android:textColorHighlight="@android:color/white"
+    android:background="@drawable/bg"
+    android:padding="10dp"
+    android:layout_marginTop="350dp"
+
+    ></Button>
+   </RelativeLayout>
+            </RelativeLayout>
+
+</LinearLayout>

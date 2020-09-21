@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "107483943595",
+    "firebase_url": "https://foodpanda-e6727.firebaseio.com",
+    "project_id": "foodpanda-e6727",
+    "storage_bucket": "foodpanda-e6727.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107483943595:android:b7553dd396d514c0a91dee",
+        "android_client_info": {
+          "package_name": "com.example.doorsteptailors"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtYsPWzbIJWeGJpJzkdPFXnIUr01w4puw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107483943595:android:0735e77bf629338ba91dee",
+        "android_client_info": {
+          "package_name": "com.example.foodpanda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtYsPWzbIJWeGJpJzkdPFXnIUr01w4puw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107483943595:android:719603737e300f3aa91dee",
+        "android_client_info": {
+          "package_name": "com.example.geofencing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtYsPWzbIJWeGJpJzkdPFXnIUr01w4puw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
